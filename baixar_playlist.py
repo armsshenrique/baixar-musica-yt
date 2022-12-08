@@ -5,15 +5,18 @@ pip install moviepy
 """
 
 from moviepy.video.io.VideoFileClip import AudioFileClip
+from tkinter import filedialog
 from os import remove
 import pytube
 
 
 def downloadPlaylist(url):
     playlist = pytube.Playlist(url)
+    dirpath = filedialog.askdirectory()
+    diretorio = dirpath
 
     for video in playlist.videos:
-        videobaixado = video.streams.get_audio_only().download()
+        videobaixado = video.streams.get_audio_only().download(diretorio)
 
         arquivomp3 = AudioFileClip(videobaixado)
         arquivomp3.write_audiofile(videobaixado[:-4] + ".mp3")
@@ -22,3 +25,4 @@ def downloadPlaylist(url):
 
 
 downloadPlaylist(input('Digite o url da PLAYLIST: '))
+print('Selecione a pasta para salvar as musicas ....')
