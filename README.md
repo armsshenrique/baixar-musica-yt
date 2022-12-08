@@ -19,7 +19,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 ## ✒️ Autor
 
-* **Desenvolvedor** - [Armstrong](https://github.com/armsshenry)
+* **Desenvolvedor** - [Armstrong](https://github.com/armsshenrique)
 
 ## Sistema operacional: 
 * Windows 💻
