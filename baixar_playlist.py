@@ -14,6 +14,7 @@ def downloadPlaylist(url):
     playlist = pytube.Playlist(url)
     dirpath = filedialog.askdirectory()
     diretorio = dirpath
+    print('Selecione a pasta para salvar as musicas ....')
 
     for video in playlist.videos:
         videobaixado = video.streams.get_audio_only().download(diretorio)
@@ -25,4 +26,3 @@ def downloadPlaylist(url):
 
 
 downloadPlaylist(input('Digite o url da PLAYLIST: '))
-print('Selecione a pasta para salvar as musicas ....')

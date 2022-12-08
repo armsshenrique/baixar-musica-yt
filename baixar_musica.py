@@ -11,6 +11,7 @@ from os import remove
 
 def BaixarAudio(url):
     video = YouTube(url)
+    print(5*'#', 'Selecione a pasta para salva a musica ....', 5*'#')
     dirpath = filedialog.askdirectory()
     diretorio = dirpath
     videobaixado = video.streams.get_audio_only().download(diretorio)
@@ -21,4 +22,3 @@ def BaixarAudio(url):
 
 
 BaixarAudio(input('Digite o url do video: '))
-print('Selecione a pasta para salva a musica ....')
