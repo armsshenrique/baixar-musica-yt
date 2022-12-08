@@ -21,5 +21,4 @@ def downloadPlaylist(url):
         remove(videobaixado)
 
 
-downloadPlaylist(
-    'https://www.youtube.com/playlist?list=PLsedSoXEihT4kPOHUhPVO0IJlmyfqJ0S6')
+downloadPlaylist(input('Digite o url da PLAYLIST: '))
