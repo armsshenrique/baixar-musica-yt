@@ -21,6 +21,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 * **Desenvolvedor** - [Armstrong](https://github.com/armsshenry)
 
-## Ambiente utilizado WINDOWS 💻
+## Sistema operacional: 
+* Windows 💻
 
 ---
